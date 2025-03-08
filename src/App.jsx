@@ -47,7 +47,7 @@ function App() {
               rows={20}
               columns={20}
               containerSize="60vmin"
-              lineColor="grey"
+              lineColor="#b5b5b583"
               lineWidth="0.1vmin"
               lineHeight="3vmin"
               baseAngle={0}
@@ -59,7 +59,8 @@ function App() {
               }}
             />
           </div>
-
+            
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <img 
             src="/header/umiyMaa.png" 
             height="300px" 
@@ -70,6 +71,8 @@ function App() {
               animation: "pulse 1s infinite alternate"
             }} 
           />
+          <span class="loader"></span>
+          </div>
 
           <style>
             {`

@@ -1,0 +1,123 @@
+/* Footer Styles */
+.footer {
+    background-color: #0a0e17;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  /* Left - Logo */
+  .footer-brand {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: serif;
+  }
+  
+  .company-name {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .tagline {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+  }
+  
+  /* Middle - Navigation Links */
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-address h3 {
+    font-size: 18px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #3498db;
+  }
+  
+  /* Right - Contact & Social Icons */
+  .footer-contact .social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-contact{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .footer-contact .social-icons a img {
+    width: 34px;
+    height: 34px;
+    transition: 0.3s;
+  }
+  
+  .footer-contact .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Address */
+  .footer-address {
+    text-align: left;
+    color: #ccc;
+  }
+  
+  .footer-address p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      
+align-content: center
+      /* text-align: center; */
+    }
+    
+    .footer-brand,
+    .footer-links,
+    .footer-contact,
+    .footer-address {
+      /* text-align: center; */
+    }
+  }
+  

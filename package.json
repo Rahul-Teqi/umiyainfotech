@@ -12,11 +12,15 @@
   "dependencies": {
     "@react-spring/web": "^9.7.5",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^12.4.10",
+    "gsap": "^3.12.7",
+    "postprocessing": "^6.37.1",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
