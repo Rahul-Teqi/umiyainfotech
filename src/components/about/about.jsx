@@ -25,7 +25,7 @@ const About = () => {
 text="We provide both cutting-edge IT solutions and result-driven digital marketing to help businesses grow online."
 speed={300}
 animateOn="view"
-maxIterations={15}
+maxIterations={10}
 revealDirection="start"
 /> 
                                     </p>
@@ -52,7 +52,7 @@ revealDirection="start"
   text="with Umiya InfoTech"
   speed={300}
   animateOn="view"
-  maxIterations={15}
+  maxIterations={10}
   revealDirection="start"
 />   </p>
                 <p class="text-blk description">
@@ -61,7 +61,7 @@ revealDirection="start"
 text="Our mission is to develop high-quality, innovative software solutions that make a difference. Whether it's web development, mobile apps, or enterprise systems, we ensure seamless digital transformation for your business."
 speed={300}
 animateOn="view"
-maxIterations={15}
+maxIterations={10}
 revealDirection="start"
 /> 
                 </p>
