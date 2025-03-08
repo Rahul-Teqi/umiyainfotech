@@ -1,0 +1,41 @@
+header{
+  width: 100%;
+  position: fixed;
+  margin-top: 20px;
+  top: 0;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+header .navbar{
+ width:95%;
+ border-radius: 10px;
+  overflow: hidden;
+}
+
+header .active{
+  color: #1EA5FC !important;
+}
+
+header a{
+  color: black !important;
+  font-weight: 500 !important;
+}
+header .Logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+header .temp{
+  background-color: black;
+  height: 25px;
+  width: 1px;
+}
+.navbar-toggler {
+  border: 0;
+  outline: 0;
+  box-shadow: none !important;
+}
