@@ -176,12 +176,13 @@
 
   /* Block 2 */
 .home .Block2 {
-    padding: 40px ;
+    padding: 25px ;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: hidden;
   }
 
 .home .Block2 .content{

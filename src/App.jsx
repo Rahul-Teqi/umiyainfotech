@@ -4,6 +4,7 @@ import Home from "./components/home/home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import MagnetLines from "./components/hooks/MagnetLines";
+import About from "./components/about/about";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -54,8 +55,7 @@ function App() {
               style={{
                 margin: "2rem auto",
                 width: "100%",
-                height: "100%",
-                margin: "0",
+                height: "100%"
               }}
             />
           </div>
@@ -86,6 +86,8 @@ function App() {
       ) : (
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+
         </Routes>
       )}
     </BrowserRouter>
