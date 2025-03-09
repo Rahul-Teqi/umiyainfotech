@@ -35,8 +35,7 @@ import { useLocation } from "react-router-dom";
                 <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Home</Nav.Link>
                 <Nav.Link as={Link} to="/about" className={location.pathname === "/about" ? "active" : ""}>About Us</Nav.Link>
                 <Nav.Link as={Link} to="/service" className={location.pathname === "/service" ? "active" : ""}>Services</Nav.Link>
-                <Nav.Link href="#work" className={location.hash === "#work" ? "active" : ""}>Our Work</Nav.Link>
-                <Nav.Link href="#contact" className={location.hash === "#contact" ? "active" : ""}>Contact Us</Nav.Link>
+                <Nav.Link as={Link} to="/contact" className={location.pathname === "/contact" ? "active" : ""}>Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

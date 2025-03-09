@@ -4,8 +4,11 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 import RotatingText from "../hooks/RotatingText";
 import DecryptedText from "../hooks/DecryptedText";
+import { useNavigate } from "react-router-dom";
+
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -65,7 +68,9 @@ maxIterations={10}
 revealDirection="start"
 /> 
                 </p>
-                <a class="explore">View Services</a>
+                <a class="explore" onClick={()=>{
+                  navigate("/service")
+                }} >View Services</a>
               </div>
             </div>
           </div>

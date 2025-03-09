@@ -6,8 +6,12 @@ import AnimatedContent from "../hooks/AnimatedContent";
 import TrueFocus from "../hooks/TrueFocus";
 import BlobCursor from "../hooks/BlobCursor";
 import Footer from "../footer/footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+
   const services = [
     {
       title: "AI & Machine Learning Integration",
@@ -94,7 +98,9 @@ const Home = () => {
                 animateOpacity
                 delay={1000}
               >
-                <button className="cta-button">Get Started</button>
+                <button className="cta-button" onClick={()=>{
+                  navigate("/contact");
+                }}>Get Started</button>
               </AnimatedContent>
             </div>
             <div className="image-container">

@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import MagnetLines from "./components/hooks/MagnetLines";
 import About from "./components/about/about";
 import Service from "./components/service/service";
+import Contact from "./components/contact/contact";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       {loading ? (
         <div className="loading-screen" style={{
           display: "flex", 
@@ -89,11 +92,21 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
-
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       )}
     </BrowserRouter>
   );
 }
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 export default App;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
-
+import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -16,19 +17,17 @@ const Footer = () => {
           <h3>Keep Exploring</h3>
           <ul>
             <li>
-              <a href="#">Home</a>
+            <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Home</Nav.Link>
+
             </li>
             <li>
-              <a href="#">About</a>
+            <Nav.Link as={Link} to="/about" className={location.pathname === "/about" ? "active" : ""}>About Us</Nav.Link>
             </li>
             <li>
-              <a href="#">Projects</a>
+            <Nav.Link as={Link} to="/service" className={location.pathname === "/service" ? "active" : ""}>Services</Nav.Link>
             </li>
             <li>
-              <a href="#">Skills</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+            <Nav.Link as={Link} to="/contact" className={location.pathname === "/contact" ? "active" : ""} >Contact Us</Nav.Link>
             </li>
           </ul>
         </div>
@@ -48,7 +47,7 @@ const Footer = () => {
             <a href="#">
               <img src="/footer/gmail (1).png" alt="Gmail" />
             </a>
-            <a href="#">
+            <a href="tel:+91 6365022089">
               <img src="/footer/call.png" alt="Call" />
             </a>
           </div>

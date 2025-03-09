@@ -2,7 +2,10 @@ import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import "./service.css";
+import { useNavigate } from "react-router-dom";
+
 const Service = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -26,7 +29,9 @@ const Service = () => {
                 predictions to automation, we create solutions that simplify
                 your work.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button" onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
 
@@ -44,7 +49,9 @@ const Service = () => {
               <p className="block-description">
               We provide Cybersecurity Solutions to protect your business from online threats and data breaches. Our services ensure your systems stay safe, secure, and always protected.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button"onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
           <div className="block-container">
@@ -58,7 +65,9 @@ const Service = () => {
               <p className="block-description">
               Our Digital Marketing services help businesses grow online with SEO, social media, and targeted advertising. We create strategies to increase your reach and attract more customers.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button"onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
 
@@ -76,7 +85,9 @@ const Service = () => {
               <p className="block-description">
               Our Custom Software Solutions are designed to meet your unique business needs. We build reliable, scalable, and user-friendly software to streamline your operations.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button"onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
           <div className="block-container">
@@ -90,7 +101,9 @@ const Service = () => {
               <p className="block-description">
               We create easy-to-use web and mobile apps that work smoothly on all devices. Our apps help businesses grow and make work easier.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button"onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
 
@@ -112,7 +125,9 @@ const Service = () => {
               <p className="block-description">
               We provide IT Consulting & Cloud Services to help businesses improve their technology and move to the cloud. Our solutions make your work faster, safer, and more efficient.
               </p>
-              <button className="block-button">Get Started</button>
+              <button className="block-button"onClick={()=>{
+                navigate("/contact")
+              }}>Get Started</button>
             </div>
           </div>
         </div>
