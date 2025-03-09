@@ -1,0 +1,121 @@
+.service .block1{
+    margin-top: 140px;
+    text-align: center;
+    width: 100%;
+}
+
+.service .block1 .companyName{
+    color: #1EA5FC !important;
+    font-family: "Playball", cursive;
+    margin-left: -200px;
+}
+
+.service .block2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service .block2{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    gap: 0px;
+
+  }
+  
+  @media (min-width: 768px) {
+    .block-container {
+      flex-direction: row;
+      gap: 150px;
+
+    }
+
+    .reverse{
+        flex-direction: row-reverse !important;
+      }
+
+      .service .block1 .companyName{
+        margin-left: -250px;
+    }
+  }
+  
+  
+
+  .block-image-container {
+    position: relative;
+  }
+  
+  .block-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .block-border {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .block-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .block-content {
+      margin-left: 20px;
+      text-align: left;
+    }
+  }
+  
+  .block-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .block-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    max-width: 500px;
+  }
+  
+  .block-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .block-button:hover {
+    background-color: #0056b3;
+  }
+  
+  

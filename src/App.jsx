@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import MagnetLines from "./components/hooks/MagnetLines";
 import About from "./components/about/about";
+import Service from "./components/service/service";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -87,6 +88,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
 
         </Routes>
       )}

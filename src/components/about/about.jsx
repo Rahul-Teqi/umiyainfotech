@@ -23,7 +23,7 @@ const About = () => {
                   <DecryptedText
 
 text="We provide both cutting-edge IT solutions and result-driven digital marketing to help businesses grow online."
-speed={200}
+speed={100}
 animateOn="view"
 maxIterations={10}
 revealDirection="start"
@@ -50,7 +50,7 @@ revealDirection="start"
 <DecryptedText
 
   text="with Umiya InfoTech"
-  speed={200}
+  speed={100}
   animateOn="view"
   maxIterations={10}
   revealDirection="start"
@@ -59,7 +59,7 @@ revealDirection="start"
                 <DecryptedText
 
 text="Our mission is to develop high-quality, innovative software solutions that make a difference. Whether it's web development, mobile apps, or enterprise systems, we ensure seamless digital transformation for your business."
-speed={200}
+speed={100}
 animateOn="view"
 maxIterations={10}
 revealDirection="start"

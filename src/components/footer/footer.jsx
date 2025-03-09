@@ -15,11 +15,21 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Keep Exploring</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Skills</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -27,9 +37,20 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact</h3>
           <div className="social-icons">
-            <a href="#"><img src="/footer/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="/footer/linkedin.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="/footer/gmail (1).png" alt="Gmail" /></a>
+            <a href="#">
+              <img src="/footer/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="/footer/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+          <div className="social-icons">
+            <a href="#">
+              <img src="/footer/gmail (1).png" alt="Gmail" />
+            </a>
+            <a href="#">
+              <img src="/footer/call.png" alt="Call" />
+            </a>
           </div>
         </div>
 
