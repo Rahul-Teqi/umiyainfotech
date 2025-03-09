@@ -48,26 +48,25 @@ hoverFillColor='#222'
           </div>
           <div class="ContactElementCon">
             <h1>Contact</h1>
-            <h4>Rpteqi@gmail.com</h4>
             <h4>+91 6365022089</h4>
-            <div class="ContactIconCon">
+            <div class="ContactIconCon" style={{zIndex:1}}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.instagram.com/_rahul________patel_/"
+                href="https://www.instagram.com/umiya.info.tech/"
               >
                 <img src="/footer/instagram.png" width="30px" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/Rahul-Teqi"
+                href="#"
               >
                 <img src="/footer/linkedin.png" width="30px" />
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="">
+              {/* <a target="_blank" rel="noopener noreferrer" href="">
                 <img src="/footer/gmail (1).png" width="30px" />
-              </a>
+              </a> */}
               <a href="tel:+91 6365022089">
                 <img src="/footer/call.png" width="30px" />
               </a>

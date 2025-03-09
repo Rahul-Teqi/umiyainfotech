@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact</h3>
           <div className="social-icons">
-            <a href="#">
+            <a href="https://www.instagram.com/umiya.info.tech/">
               <img src="/footer/instagram.png" alt="Instagram" />
             </a>
             <a href="#">
@@ -44,9 +44,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="social-icons">
-            <a href="#">
+            {/* <a href="#">
               <img src="/footer/gmail (1).png" alt="Gmail" />
-            </a>
+            </a> */}
             <a href="tel:+91 6365022089">
               <img src="/footer/call.png" alt="Call" />
             </a>
