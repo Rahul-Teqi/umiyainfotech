@@ -18,7 +18,7 @@ const Contact = () => {
             Reach out and let's start a conversation—I'm here to connect
           </p>
           <div class="CallBtnCon block">
-            <a href="tel:+91 6365022089">
+            <a href="tel:+91 6353022089">
               <button class="button-52">CALL</button>
             </a>
           </div>
@@ -48,7 +48,7 @@ hoverFillColor='#222'
           </div>
           <div class="ContactElementCon">
             <h1>Contact</h1>
-            <h4>+91 6365022089</h4>
+            <h4>+91 6353022089</h4>
             <div class="ContactIconCon" style={{zIndex:1}}>
               <a
                 target="_blank"
@@ -67,7 +67,7 @@ hoverFillColor='#222'
               {/* <a target="_blank" rel="noopener noreferrer" href="">
                 <img src="/footer/gmail (1).png" width="30px" />
               </a> */}
-              <a href="tel:+91 6365022089">
+              <a href="tel:+91 6353022089">
                 <img src="/footer/call.png" width="30px" />
               </a>
             </div>

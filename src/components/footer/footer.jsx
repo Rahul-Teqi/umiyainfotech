@@ -47,7 +47,7 @@ const Footer = () => {
             {/* <a href="#">
               <img src="/footer/gmail (1).png" alt="Gmail" />
             </a> */}
-            <a href="tel:+91 6365022089">
+            <a href="tel:+91 6353022089">
               <img src="/footer/call.png" alt="Call" />
             </a>
           </div>
