@@ -1,0 +1,33 @@
+nginx Server Modify for Routing Issue
+
+
+1. docker exec -it umiyainfotech-react-new sh
+
+2. /usr/share/nginx/html # nano /etc/nginx/conf.d/default.conf
+
+3. Modify that File to  :
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name umiyainfotech.in www.umiyainfotech.in;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+
+    error_page 404 /index.html;
+
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+}
+
+4. nginx -s reload
+
+Done

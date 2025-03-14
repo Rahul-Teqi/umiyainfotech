@@ -36,10 +36,10 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact</h3>
           <div className="social-icons">
-            <a href="https://www.instagram.com/umiya.info.tech/">
+            <a target="_blank" href="https://www.instagram.com/umiya.info.tech/">
               <img src="/footer/instagram.png" alt="Instagram" />
             </a>
-            <a href="#">
+            <a target="_blank" href="https://www.linkedin.com/company/umiyainfotech">
               <img src="/footer/linkedin.png" alt="LinkedIn" />
             </a>
           </div>

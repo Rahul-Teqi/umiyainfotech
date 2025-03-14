@@ -60,7 +60,7 @@ hoverFillColor='#222'
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="#"
+                href="https://www.linkedin.com/company/umiyainfotech"
               >
                 <img src="/footer/linkedin.png" width="30px" />
               </a>
