@@ -17,7 +17,7 @@ function App() {
     const timer = setTimeout(() => {
       window.addEventListener("load", () => setLoading(false));
       setLoading(false); // Fallback in case load event doesn't trigger
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,7 +29,7 @@ function App() {
   }, [loading]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <ScrollToTop />
       {loading ? (
         <div className="loading-screen" style={{
