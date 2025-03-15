@@ -65,7 +65,7 @@ function App() {
           </div>
             
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <img 
+          {/* <img 
             src="/header/umiyMaa.png" 
             height="300px" 
             style={{
@@ -74,7 +74,7 @@ function App() {
               transition: "transform 1s ease-in-out",
               animation: "pulse 1s infinite alternate"
             }} 
-          />
+          /> */}
           <span class="loader"></span>
           </div>
 
