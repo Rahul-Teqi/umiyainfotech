@@ -48,6 +48,7 @@ hoverFillColor='#222'
           </div>
           <div class="ContactElementCon">
             <h1>Contact</h1>
+            <h4>support@umiyainfotech.in</h4>
             <h4>+91 6353022089</h4>
             <div class="ContactIconCon" style={{zIndex:1}}>
               <a
@@ -64,9 +65,9 @@ hoverFillColor='#222'
               >
                 <img src="/footer/linkedin.png" width="30px" />
               </a>
-              {/* <a target="_blank" rel="noopener noreferrer" href="">
+              <a target="_blank" rel="noopener noreferrer" href="mailto:support@umiyainfotech.in">
                 <img src="/footer/gmail (1).png" width="30px" />
-              </a> */}
+              </a>
               <a href="tel:+91 6353022089">
                 <img src="/footer/call.png" width="30px" />
               </a>

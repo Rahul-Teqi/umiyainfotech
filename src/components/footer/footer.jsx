@@ -50,6 +50,9 @@ const Footer = () => {
             <a href="tel:+91 6353022089">
               <img src="/footer/call.png" alt="Call" />
             </a>
+            <a target="_blank" href="mailto:support@umiyainfotech.in">
+              <img src="/footer/mail.png" alt="Mail" />
+            </a>
           </div>
         </div>
 
