@@ -66,3 +66,16 @@
   }
 }
     
+
+.CopyRight{
+  font-size: 13px;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.408);
+}
+

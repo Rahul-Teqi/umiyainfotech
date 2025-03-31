@@ -30,6 +30,7 @@ function App() {
 
   return (
     <BrowserRouter basename="/">
+      <div className="CopyRight">© 2025 Umiya InfoTech. All rights reserved.</div>
       <ScrollToTop />
       {loading ? (
         <div className="loading-screen" style={{

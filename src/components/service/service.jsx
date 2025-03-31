@@ -17,7 +17,7 @@ const Service = () => {
         <div className="block2">
           <div className="block-container">
             <div className="block-image-container">
-            <video src="/service/AI.mp4" className="block-image" muted playsInline  autoPlay loop />
+            <video src="/service/AI.webm" className="block-image" muted playsInline  autoPlay loop />
 
               <div className="block-border"></div>
             </div>
@@ -40,7 +40,7 @@ const Service = () => {
             style={{ backgroundColor: "#F3F5FF" }}
           >
             <div className="block-image-container">
-            <video src="/service/cybersecurity.mp4  " className="block-image" muted playsInline autoPlay loop />
+            <video src="/service/cybersecurity.webm  " className="block-image" muted playsInline autoPlay loop />
 
               <div className="block-border"></div>
             </div>
@@ -56,7 +56,7 @@ const Service = () => {
           </div>
           <div className="block-container">
             <div className="block-image-container">
-            <video src="/service/marketing.mp4 " className="block-image" muted playsInline  autoPlay loop />
+            <video src="/service/marketing.webm " className="block-image" muted playsInline  autoPlay loop />
 
               <div className="block-border"></div>
             </div>
@@ -76,7 +76,7 @@ const Service = () => {
             style={{ backgroundColor: "#F3F5FF" }}
           >
             <div className="block-image-container">
-            <video src="/service/Software.mp4 " className="block-image" muted playsInline  autoPlay loop />
+            <video src="/service/Software.webm " className="block-image" muted playsInline  autoPlay loop />
 
               <div className="block-border"></div>
             </div>
@@ -92,7 +92,7 @@ const Service = () => {
           </div>
           <div className="block-container">
             <div className="block-image-container">
-            <video src="/service/application.mp4" className="block-image" muted playsInline  autoPlay loop  />
+            <video src="/service/application.webm" className="block-image" muted playsInline  autoPlay loop  />
 
               <div className="block-border"></div>
             </div>
@@ -117,7 +117,7 @@ const Service = () => {
                 alt="AI & Machine Learning"
                 
               /> */}
-              <video src="/service/cloud.mp4" className="block-image" muted playsInline  autoPlay loop />
+              <video src="/service/cloud.webm" className="block-image" muted playsInline  autoPlay loop />
               <div className="block-border" ></div>
             </div>
             <div className="block-content">

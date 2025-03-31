@@ -7,47 +7,110 @@ import TrueFocus from "../hooks/TrueFocus";
 import BlobCursor from "../hooks/BlobCursor";
 import Footer from "../footer/footer";
 import { useNavigate } from "react-router-dom";
+import CircularGallery from "../hooks/CircularGallery";
+
+const GradientText = ({
+  children,
+  className = "",
+  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"], // Default colors
+  animationSpeed = 8, // Default animation speed in seconds
+  showBorder = false, // Default overlay visibility
+}) => {
+  const gradientStyle = {
+    backgroundImage: `linear-gradient(to right, ${colors.join(", ")})`,
+    animationDuration: `${animationSpeed}s`,
+  };
+
+  return (
+    <div className={`animated-gradient-text ${className}`}>
+      {showBorder && (
+        <div className="gradient-overlay" style={gradientStyle}></div>
+      )}
+      <div className="text-content" style={gradientStyle}>
+        {children}
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
   const navigate = useNavigate();
 
+  const features = [
+    {
+      icon: "/home/money-bag 1.webp",
+      title: "Experienced & Trusted Team",
+      description:
+        "With a team of skilled developers and IT professionals, we bring years of experience to deliver high-quality solutions that exceed expectations.",
+    },
+    {
+      icon: "/home/money-bag 2.webp",
+      title: "Tailored to Your Business Needs",
+      description:
+        "Every business is unique, and so are our solutions. We craft customized IT and software services that align perfectly with your business goals.",
+    },
+    {
+      icon: "/home/money-bag 3.webp",
+      title: "Affordable & High-Quality Services",
+      description:
+        "We believe in providing cost-effective solutions without compromising on quality. Get premium IT services at budget-friendly prices.",
+    },
+    {
+      icon: "/home/money-bag 4.webp",
+      title: "Innovative & Modern Solutions",
+      description:
+        "At Umiya InfoTech, we leverage the latest technologies to develop cutting-edge software and IT solutions that help businesses thrive in a competitive digital landscape.",
+    },
+    {
+      icon: "/home/money-bag 5.webp",
+      title: "Reliable & Scalable Technology",
+      description:
+        "From startups to enterprises, our solutions are built for reliability, security, and scalability, ensuring seamless growth as your business expands.",
+    },
+    {
+      icon: "/home/money-bag 6.webp",
+      title: "Ongoing Support & Maintenance",
+      description:
+        "Our job doesn’t end at deployment. We offer continuous support and maintenance to ensure your business operations run smoothly.",
+    },
+  ];
 
   const services = [
     {
       title: "AI & Machine Learning Integration",
       description:
         "Smart AI-driven solutions to automate processes and improve decision-making.",
-      icon: "/home/artificial-intelligence.png",
+      icon: "/home/artificial-intelligence.webp",
     },
     {
       title: "Cybersecurity Solutions",
       description:
         "Advanced security measures to protect your data and digital assets.",
-      icon: "/home/cyber-security (1).png",
+      icon: "/home/cyber-security (1).webp",
     },
     {
       title: "Digital Marketing",
       description:
         "Elevate your brand with data-driven online marketing strategies.",
-      icon: "/home/social-media.png",
+      icon: "/home/social-media.webp",
     },
     {
       title: "Custom Software Solutions",
       description:
         "Tailor-made software to streamline and enhance business operations.",
-      icon: "/home/system.png",
+      icon: "/home/system.webp",
     },
     {
       title: "Web & Mobile App Development",
       description:
         "Build high-performance, user-friendly applications for all platforms.",
-      icon: "/home/web-design.png",
+      icon: "/home/web-design.webp",
     },
     {
       title: "IT Consulting & Cloud Services",
       description:
         "Expert guidance and scalable cloud solutions for business growth.",
-      icon: "/home/cloud-server.png",
+      icon: "/home/cloud-server.webp",
     },
   ];
 
@@ -56,7 +119,7 @@ const Home = () => {
       <Header />
       <div className="home">
         <div className="background">
-          <img src="/home/background.png" alt="Background" />
+          <img src="/home/background.webp" alt="Background" />
         </div>
         <div className="Block1">
           <div className="content">
@@ -98,9 +161,14 @@ const Home = () => {
                 animateOpacity
                 delay={1000}
               >
-                <button className="cta-button" onClick={()=>{
-                  navigate("/contact");
-                }}>Get Started</button>
+                <button
+                  className="cta-button"
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
+                >
+                  Get Started
+                </button>
               </AnimatedContent>
             </div>
             <div className="image-container">
@@ -114,7 +182,7 @@ const Home = () => {
                 delay={1400}
               >
                 <img
-                  src="/home/dataPerson.png"
+                  src="/home/dataPerson.webp"
                   alt="Data Person"
                   className="data-image"
                 />
@@ -157,7 +225,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="/home/solution.png"
+              src="/home/solution.webp"
               alt="Solutions"
               style={{ width: "100%", maxWidth: "400px" }}
             />
@@ -181,8 +249,49 @@ const Home = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="why-choose-us">
+        <h2>Why Choose Umiya InfoTech?</h2>
+        <div className="features">
+          {features.map((feature, index) => (
+            <div className="feature" key={index}>
+              <img className="icon" src={feature.icon} alt={feature.icon} />
+              <div className="content">
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      <Footer />  
+      </div>
+      <div className="portfolio">
+        <h3>Our Portfolio</h3>
+        <p>
+          Check out some of the amazing websites & Application we’ve already
+          built for businesses just like yours
+        </p>
+        <div style={{ height: "600px", position: "relative" }}>
+          <CircularGallery bend={10} textColor="#000000" borderRadius={0.05} />
+        </div>
+      </div>
+      <div className="getStarted">
+        <h2>Get Started Today</h2>
+        <h4>Ready to build your dream Application? It’s easy!</h4>
+        <div style={{width:"fit-content"}} onClick={() => {
+            navigate("/contact");
+          }}>
+
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={true}
+          className="custom-class"
+          >
+          Contact Us
+        </GradientText>
+          </div>
+      </div>
+      <Footer />
     </>
   );
 };
