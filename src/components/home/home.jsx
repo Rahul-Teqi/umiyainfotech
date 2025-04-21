@@ -270,8 +270,10 @@ const Home = () => {
           Check out some of the amazing websites & Application we’ve already
           built for businesses just like yours
         </p>
-        <div style={{ height: "600px", position: "relative" }}>
-          <CircularGallery bend={10} textColor="#000000" borderRadius={0.05} />
+        <div style={{padding:"10px 20px 70px 20px" }}>
+        <div class="slider-container">
+          <CircularGallery  />
+        </div>
         </div>
       </div>
       <div className="getStarted">
